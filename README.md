@@ -1,2 +1,2 @@
-# IPMU_cluster_configuration
+# IPMU-Cluster
 Deployment scripts for GPU cluster @ IPMU
