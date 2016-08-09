@@ -1,0 +1,6 @@
+---
+  # add user "test_person" to the cluster. Follow this pattern to add more users
+  - user: name=test_person uid=444
+  - group: name=test_person gid=444 state=present
+  - authorized_key: user=test_person key="{{ lookup('file', '/home/test_person/.ssh/id_rsa.pub') }}"
+

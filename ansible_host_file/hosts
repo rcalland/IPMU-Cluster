@@ -45,5 +45,5 @@
 [master] # neutrino01
 neutrino01
 
-[cluster] # all other nodes
+[nodes] # all other nodes
 neutrino[02:09]

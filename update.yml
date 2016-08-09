@@ -1,0 +1,15 @@
+---
+- name: master update
+  hosts: master
+  connection: local
+  remote_user: root
+
+  tasks:
+  - include: user_setup.yml
+
+- name: node update
+  hosts: nodes
+  remote_user: root
+
+  tasks:
+  - include: user_setup.yml
