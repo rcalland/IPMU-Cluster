@@ -6,4 +6,4 @@ Deployment scripts for GPU cluster @ IPMU.
 * to update changes, run `ansible-playbook --ask-pass update.yml` as `root` user. It will ask you to input the root password.
 
 ## Starting the condor demons on all nodes
-Do command `ansible nodes -a 'condor_master'` to start the condor demon on the nodes. Replace `nodes` with `master` to start on neutrino01 (however, you are probably already logged into neutrino01, so you can simply do `condor_master`.
+Do command `ansible nodes -a '/bin/sh ~condor/condor/condor.sh && condor_master'` to start the condor demon on the nodes. Replace `nodes` with `master` to start on neutrino01 (however, you are probably already logged into neutrino01, so you can simply do `condor_master`).
