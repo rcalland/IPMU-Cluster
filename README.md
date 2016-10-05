@@ -1,5 +1,5 @@
 # IPMU-Cluster
-Deployment scripts for GPU cluster @ IPMU.
+Deployment scripts for GPU cluster @ IPMU. Full cluster documentation can be read (and edited) at this link: https://docs.google.com/document/d/1O7FO8YwwyP36FeKcwz9bk619vfWf8BBXD5w6jNih_3w/edit?usp=sharing
 
 * `ansible_host_file/hosts` should be placed at `/etc/ansible/hosts` on `neutrino01`.
 * make changes to the .yml files (Uses the YAML human-readable language). Everything is controlled by the `update.yml` file.
