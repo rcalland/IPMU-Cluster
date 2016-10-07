@@ -5,11 +5,18 @@
   remote_user: root
 
   tasks:
-  - include: user_setup.yml
+  - include: users.yml
 
-- name: node update
-  hosts: nodes
+- name:  CENTOS6 node update
+  hosts: centos6_nodes
   remote_user: root
 
   tasks:
-  - include: user_setup.yml
+  - include: users.yml
+
+- name:  CENTOS7 node update
+  hosts: centos7_nodes
+  remote_user: root
+
+  tasks:
+  - include: users.yml

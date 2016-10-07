@@ -1,0 +1,3 @@
+---
+   - name: install libX11
+     yum: name-libX11-devel status=present
