@@ -6,6 +6,7 @@
 
   tasks:
   - include: users.yml
+  - include: software.yml
 
 - name:  CENTOS6 node update
   hosts: centos6_nodes
@@ -13,6 +14,7 @@
 
   tasks:
   - include: users.yml
+  - include: software.yml
 
 - name:  CENTOS7 node update
   hosts: centos7_nodes
@@ -20,3 +22,4 @@
 
   tasks:
   - include: users.yml
+  - include: software.yml
