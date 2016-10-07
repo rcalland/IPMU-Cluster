@@ -1,0 +1,4 @@
+---
+  - name: set HTCondor to start when machine is booted
+    lineinfile: dest=/etc/rc.local line="source ~condor/condor/condor.sh && condor_master"
+
